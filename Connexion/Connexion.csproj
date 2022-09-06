@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image Cadenas.jpg" />
+    <None Remove="image Velo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image Cadenas.jpg" />
+    <Resource Include="image Velo.png" />
+  </ItemGroup>
+
+</Project>
