@@ -31,13 +31,13 @@ namespace Connexion
         {
             if (String.IsNullOrWhiteSpace(txtIdConnexion.Text) || String.IsNullOrWhiteSpace(txtMotDePasseConnexion.Password))
             {
-                MessageBox.Show("Merci de renseigner les champs 'Identification' et/ou 'Motde passe'");
+                MessageBox.Show("Merci de renseigner les champs 'Identification' et/ou 'Mot de passe'");
             }
             else
             {
                 if (txtIdConnexion.Text == idConnexion && txtMotDePasseConnexion.Password == motDePasse)
                 {
-                    MessageBox.Show("Bonjour,\nMerci de patienter,la connexion est en cours.");
+                    MessageBox.Show("Bonjour,\nMerci de patienter, la connexion est en cours.");
 
                     PageReservation page = new PageReservation();
                     page.Show();

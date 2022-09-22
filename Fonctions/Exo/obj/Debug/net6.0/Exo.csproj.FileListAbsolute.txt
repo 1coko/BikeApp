@@ -1,0 +1,15 @@
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\bin\Debug\net6.0\Exo.exe
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\bin\Debug\net6.0\Exo.deps.json
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\bin\Debug\net6.0\Exo.runtimeconfig.json
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\bin\Debug\net6.0\Exo.dll
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\bin\Debug\net6.0\Exo.pdb
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.csproj.AssemblyReference.cache
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.AssemblyInfoInputs.cache
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.AssemblyInfo.cs
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.csproj.CoreCompileInputs.cache
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.dll
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\refint\Exo.dll
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.pdb
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\Exo.genruntimeconfig.cache
+C:\Users\malek\OneDrive\Bureau\Formation CSharp\Fonctions\Exo\obj\Debug\net6.0\ref\Exo.dll
