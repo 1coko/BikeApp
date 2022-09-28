@@ -1,0 +1,142 @@
+Microsoft SQL Server Management Studio
+
+	
+	Requêtes
+
+
+	- CRUD (Create - Read - Update - Delete)
+	les caractères sont notés entre les ''
+	les entiers sont noté sans les ''
+	le signe " * " veut dire "all" (tout)
+
+
+-- Create : on va inserer une nouvelle ligne dans la table
+
+insert into table () values ();
+INSERT INTO TABLE () VALUES ();
+insert into table (colonne) values (valeurs);
+INSERT INTO TABLE (colonne) VALUES (valeurs);
+
+table : est le nom de la table concernée
+(colonnes) : est le nom exacte de la/des colonne(s) à renseigner, séparé d'une virgule et strictement dans l'ordres d'affichage des colonnes de la table
+(valeurs) : correspond aux valeurs à renseigner dans l'ordre des colonnes saisies et séparé d'une virgule
+
+Exp create :
+insert into Fournisseur (Id, Nom, Adresse) values (245, 'Togocom', '256 rue de Lomé TOGO');
+
+
+
+-- Read : on va effectuer selectionner une ou plusieurs colonnes de la table voir effectuer des filtres pour rechercher une donnée précise 
+
+select colonne
+from table
+
+colonne : est le nom exacte de la/des colonne(s) à renseigner, séparé d'une virgule et strictement dans l'ordres d'affichage des colonnes de la table
+table : est le nom de la table concernée
+
+Exp read :
+select Id, Nom, Adresse
+from Fournisseur
+
+
+		read avec Filtre :
+
+			select colonne
+			from table
+			where condition
+
+			Exp read avec un filtre :
+		-	select Id, Nom, Adresse
+			from Fournisseur
+			where Id = 245 and Nom = 'Togocom' or Adresse = '256 rue de Lomé TOGO'
+
+
+		-	select Nom
+			from Fournisseur
+			where Nom like 'T%' pour filtrer tout les noms qui commencent par un T
+			ou
+			where Nom like '%T' pour filtrer tout les noms qui finissent par un T
+			ou
+			where Nom like '%T%' pour filtrer tout les noms qui contiennent un T
+
+
+		-	select Date
+			from Client
+			where DateFacture between '01-09-2022' and '10-09-2022'
+
+
+-- Update : on va modifier une ou plusieurs données de la table et il faut le faire en "2 temps" sinon on va modifier toute la table sans retour en arrière possible
+
+update table
+set colonne = values
+where condition
+
+ou alors
+
+1)
+select *
+from table
+where condition
+
+2)
+update table
+set colonne = values
+where condition
+
+l'étape 1) va nous renseigner sur le nombre totale de ligne potentiellement concernés par la modification qu'on s'apprete à réaliser
+on peut donc envoyer un export au demandeur pour demander précision ou confirmation de la demande
+* veut dire qu'il faut tout selectionner
+table : est le nom de la table concernée par la modification et il est stictement identique entre le 1) et le 2)
+colonne : est le nom exacte de la/des colonne(s) à modifier, séparées d'une virgule et strictement dans l'ordres d'affichage des colonnes de la table
+la colonne de "set colonne" et focement la même que dans la condition "where condition"
+values : est la nouvelle valeur à renseigner pour faire la modification
+where condition : doit etre stictement identique entre le 1) et le 2)
+
+Exp update :
+-	select *
+	from Fournisseur
+	where Nom = 'tatata'
+
+	update Fournisseur
+	set Nom = 'tototo'
+	where Nom = 'tatata'
+
+-	select *
+	from Client
+	where Nom = 'Dupont', Prenom = 'Michele', DateDeNaissance = 12-08-2002
+
+	update Client
+	set Nom = 'Durant', Prenom = 'Micheline', DateDeNaissance = 08-12-2012
+	where Nom = 'Dupont', Prenom = 'Michele', DateDeNaissance = 12-08-2002
+
+
+
+-- Delete : on va supprimer une donnée dans la table et il faut le faire en "2 temps" pour s'assurer de la donnée qu'on va supprimer de la table
+
+delete from table
+where condition
+
+ou alors
+
+1)
+select *
+from table
+where condition
+
+2)
+delete from table
+where condition
+
+l'étape 1) va nous renseigner sur le nombre totale de ligne potentiellement concernés par la suppression qu'on s'apprete à réaliser
+on peut donc envoyer un export au demandeur pour demander précision ou confirmation de la demande
+* veut dire qu'il faut tout selectionner
+table : est le nom de la table concernée
+where condition : doit etre stictement identique entre le 1) et le 2)
+
+Exp delete :
+select *
+from Fournisseur
+where Id = 1
+
+delete from Fournisseur
+where Id = 1

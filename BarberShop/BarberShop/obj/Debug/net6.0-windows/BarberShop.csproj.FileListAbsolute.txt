@@ -1,5 +1,0 @@
-C:\Users\malek\OneDrive\Bureau\Formation CSharp\BarberShop\BarberShop\obj\Debug\net6.0-windows\BarberShop.csproj.AssemblyReference.cache
-C:\Users\malek\OneDrive\Bureau\Formation CSharp\BarberShop\BarberShop\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\malek\OneDrive\Bureau\Formation CSharp\BarberShop\BarberShop\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\malek\OneDrive\Bureau\Formation CSharp\BarberShop\BarberShop\obj\Debug\net6.0-windows\BarberShop_MarkupCompile.cache
-C:\Users\malek\OneDrive\Bureau\Formation CSharp\BarberShop\BarberShop\obj\Debug\net6.0-windows\BarberShop_MarkupCompile.lref
